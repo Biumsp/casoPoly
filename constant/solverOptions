@@ -1,0 +1,66 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.3;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      solverOptions;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Kinetics
+{
+	folder	   			"kinetic/kinetics";
+	lumpedScheme			Methanation;
+}
+
+EquationOptions
+{
+	energyEquation			no;
+	speciesEquation	               	no;
+}
+
+Gas
+{
+	reaction			no;
+	massTransfer			yes;
+}
+
+Solid
+{
+    liquid              yes;
+	reaction			no;
+	implicit			true;
+	sparse				false;
+	reactionUpdate  		1e-6; //		
+	coverage			no;
+	catalyticLoad           	1684; //m^2/m^3 cat
+	SpeedUp				{ISAT no; CA no;};
+}
+
+#include "suOptions"
+
+Ode
+{
+	relTolerance 	1e-09;
+	absTolerance 	1e-12;
+	maximumOrder 	5;
+	fullPivoting 	true;
+}
+
+postProcessing
+{
+	cupMix 		yes;
+	planePosition	((0 0 0.04));
+	planeNormal	(0 0 1);
+	writeInterval	5;
+}	
+
+
+

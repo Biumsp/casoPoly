@@ -1,0 +1,15 @@
+ELEMENTS
+	C
+	O 
+	H
+	Ar
+	N
+END
+
+SPECIES
+	CH4 H2 CO CO2 H2O Ar
+END
+
+REACTIONS
+	H2 => H2                            1.E1    .000  10000.0
+END

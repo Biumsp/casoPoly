@@ -1,0 +1,30 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5                                     |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      OpenSMOKE.air;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+PhysicalModel
+{
+	
+	diffusivityModel		"FickMass";		// or "lewis-numbers"
+	inert   			Ar;	
+}
+
+LewisNumbers
+{
+	O2  1.0;
+	H2  1.1;
+	H2O 1.2;
+	N2  1.3;
+}

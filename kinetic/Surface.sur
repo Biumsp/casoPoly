@@ -1,0 +1,21 @@
+MATERIAL MAT-1
+
+SITE/CAT_SURFACE/    SDEN/2.49E-9/
+    _s_
+END
+
+REACTIONS
+
+!-----Methanation------------------------!
+1CO + 3H2 + _s_ => 1CH4 + 1H2O + _s_ 1 0 0
+LUMPED /methane_dir/
+1CH4 + 1H2O + _s_ => 1CO + 3H2 + _s_ 1 0 0
+LUMPED /methane_inv/
+
+!---------------WGS-----------------------!
+1CO + 1H2O + _s_ => 1CO2 + 1H2 + _s_ 1 0 0
+LUMPED /wgs/
+1CO2 + 1H2 + _s_ => 1CO + 1H2O + _s_ 1 0 0
+LUMPED /rwgs/
+
+END

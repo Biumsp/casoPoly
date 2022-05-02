@@ -1,0 +1,18 @@
+ELEMENTS
+C
+H
+O
+AR
+END
+
+SPECIES
+CH4                           H2                            CO                            
+CO2                           H2O                           Ar                            
+END
+
+REACTIONS
+
+H2=>H2                                                  1.0000e+01    0.000     10000.00
+
+END
+
