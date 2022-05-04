@@ -28,7 +28,7 @@ regions
         box (-0.02 -0.02 0) (0.02 0.02 0.012);
         fieldValues
         (
-            volScalarFieldValue alpha.air 0.4
+            //volScalarFieldValue alpha.air 0.4
             volScalarFieldValue alpha.particles 0.6
         );
     }
