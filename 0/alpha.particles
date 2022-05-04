@@ -20,18 +20,18 @@ dimensions      [0 0 0 0 0 0 0];
 internalField   uniform 0.0;
 boundaryField
 {
-    walls
-    {
-        type            zeroGradient;
-    }
-    inlet
-    {
-        type            zeroGradient;
-    }
-    outlet
-    {
-        type            zeroGradient;
-    }
+    // walls
+    // {
+    //     type            zeroGradient;
+    // }
+    // inlet
+    // {
+    //     type            zeroGradient;
+    // }
+    // outlet
+    // {
+    //     type            zeroGradient;
+    // }
 }
 
 
