@@ -18,8 +18,8 @@ FoamFile
 dimensions      [0 0 0 0 0 0 0];
 
 internalField   uniform 0.0;
-boundaryField
-{
+// boundaryField
+// {
     // walls
     // {
     //     type            zeroGradient;
@@ -32,7 +32,7 @@ boundaryField
     // {
     //     type            zeroGradient;
     // }
-}
+// }
 
 
 // ************************************************************************* //
