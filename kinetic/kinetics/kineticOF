@@ -1,0 +1,34 @@
+elements
+5
+(
+C
+O
+H
+Ar
+N
+)
+;
+
+species
+6
+(
+CH4
+H2
+CO
+CO2
+H2O
+AR
+)
+;
+
+reactions
+{
+    un-named-reaction-0
+    {
+        type            irreversibleArrheniusReaction;
+        reaction        "H2 = H2";
+        A               10;
+        beta            0;
+        Ta              5031.912388;
+    }
+}

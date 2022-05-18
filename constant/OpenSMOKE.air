@@ -18,7 +18,7 @@ PhysicalModel
 {
 	
 	diffusivityModel		"FickMass";		// or "lewis-numbers"
-	inert   			Ar;	
+	inert   			AR;	
 }
 
 LewisNumbers

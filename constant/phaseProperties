@@ -20,7 +20,7 @@ phases (particles air);
 particles
 {
     ThermoClassScheme	OpenSmokeThermoSolid;
-    diameterModel	    polydisperseDiameter;
+    diameterModel	polydisperse;
     constantCoeffs
     {
         d               125e-6;
@@ -28,6 +28,9 @@ particles
 
     alphaMax        	0.65;
     residualAlpha   	1e-6;
+
+    maxD 		1e-6;
+    minD		200e-6;
 }
 
 air

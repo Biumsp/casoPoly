@@ -3,8 +3,8 @@
 <Properties>
   <Author>undefined</Author>
   <Place>undefined</Place>
-  <Date>2019-01-16</Date>
-  <Time>16:24:23</Time>
+  <Date>2022-05-13</Date>
+  <Time>18:26:45</Time>
   <Comments>
 no comments
   </Comments>
@@ -28,7 +28,7 @@ C H O AR RH
 7
 </NumberOfSpecies>
 <NamesOfSpecies>
-CH4 H2 CO CO2 H2O Ar _s_ 
+CH4 H2 CO CO2 H2O AR _s_ 
 </NamesOfSpecies>
 <Thermodynamics type="NASA">
 <NASA-coefficients>

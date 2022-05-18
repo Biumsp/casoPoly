@@ -25,7 +25,7 @@ boundaries
     inlet
     {
         type    fixedValue;
-        value   uniform 0;
+        value   zeroGradient;
     }
     defaultFaces
     {
@@ -52,7 +52,13 @@ particles
         node0
         {
             rho     rho [1 -3 0 0 0 0 0] 1684;
-            dia     dia [0 1 0 0 0 0 0] 125e-6;
+            dia     dia [0 1 0 0 0 0 0] 125.1e-6;
+            alpha   alpha [0 0 0 0 0 0 0] 0.33;
+        }
+        node1
+        {
+            rho     rho [1 -3 0 0 0 0 0] 1684;
+            dia     dia [0 1 0 0 0 0 0] 124.9e-6;
             alpha   alpha [0 0 0 0 0 0 0] 0.33;
         }
     }

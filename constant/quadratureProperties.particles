@@ -22,16 +22,22 @@ basicMomentInversion
     univariateMomentInversion   Gauss;
 }
 
+nSecondaryNodes 0;
+
 moments
 (
     (0)
     (1)
     (2)
+    (3)
 );
 
 nodes
 (
     node0
+    {}
+
+    node1
     {}
 );
 
@@ -41,3 +47,4 @@ residuals
     minM1   1e-6;
 }
 // ************************************************************************* //
+
